@@ -18,6 +18,17 @@ html, body{
 body {
     overflow-x: hidden;
 }
+
+button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
 .firstSection {
     height: 100vh;
     width: 100%;
@@ -62,28 +73,66 @@ body {
     color:white;
 }
 
+.firstTextOpacty p {
+    margin-bottom: 40px;
+}
+
+.firstTextOpacty button {
+    height: 54px;
+    width: 172px;
+    margin: 0 auto;
+    font-size: 17px;
+    color: white;
+    font-weight: 400;
+    z-index: 10;
+    background: rgb(81,167,229);
+    background: linear-gradient(-71deg, rgba(81,167,229,1) 0%, rgba(73,119,239,1) 100%);
+    border-radius: 155px;
+}
+
 .imgs {
     position: absolute;
 }
 
+.droapArrow {
+    cursor: pointer;
+    position: fixed;
+    left: 50%;
+    bottom: 1%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+}
 
+.droapArrow div {
+    /* z-index: 999; */
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.droapArrow div img{
+    cursor: pointer;
+    /* z-index: 999; */
+}
 
 .emptySection{
     height: 750px;
     /* background-color: blue; */
     margin: 100px;
     margin-top: 0;
+    margin-bottom: 0;
     z-index: -1;
 }
 
 .emptySection div{
     height: 100%;
     width: 100%;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
 }
 
 .secndAnime {
     background-color: aliceblue;
+    max-height: 786px;
 }
 
 .thirdContainer {
@@ -98,10 +147,12 @@ body {
 }
 
 .thireDiver {
+    width: 1495px;
+    margin-left: auto;
+    margin-right: auto;
     /* position: sticky;
     top: 0; */
     /* height: 100vh; */
-    /* width: 100%; */
     /* background-color: #ff8e7f; */
 }
 
@@ -116,10 +167,18 @@ body {
 .sideUl li{
     font-size: 52px;
     font-weight: bold;
-    color: #555555;
+    /* color: #555555; */
     /* word-wrap: inherit; */
     white-space: nowrap;
     margin-right: 80px;
+}
+
+.secondLi {
+    color: #b2b2b2;
+}
+
+.firstLi {
+    color: #04294A;
 }
 
 .thirdContainer h1 {
@@ -156,4 +215,81 @@ body {
     top: 40%;
     left: 50%;
     /* transform: translate(0%, -50%); */
+}
+
+.sub3 {
+    left: -10%;
+    bottom: -2%;
+}
+
+.sub4 {
+    bottom: 1%;
+    right: 2%;
+}
+
+.sub5 {
+    left: 25%;
+    top: 7%;
+}
+
+.thirdAnime {
+    background-color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.thirdH1 {
+    text-align: center;
+    color: #04294A;
+    font-size: 56px;
+    font-weight: bold;
+}
+
+.thirdP {
+    text-align: center;
+    color: #343434;
+    font-size: 23px;
+    font-weight: 400;
+    width: 588px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.thirdImgSection {
+    position: relative;
+    width: 308px;
+    margin: auto;
+}
+
+
+.timg1{
+    top: 164px;
+    left: -94px;
+}
+
+.timg2{
+    bottom: -62px;
+    left: -161px;
+}
+
+.timg3{
+    top: -79px;
+    right: -155px;
+}
+
+.timg4{
+    left: 74px;
+    bottom: 36px;
+    z-index: 3;
+}
+
+.timg5{
+    right: 105px; 
+    bottom: 93px; 
+    z-index: 0;
+}
+
+.timg6 {
+    position: relative;
+    z-index: 2;
 }

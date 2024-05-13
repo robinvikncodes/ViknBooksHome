@@ -1,0 +1,61 @@
+.animeli2 {
+  position: relative;
+  animation: keyli2 2s infinite;
+}
+
+.animeli3 {
+  position: relative;
+  animation: keyli1 2s infinite;
+}
+
+.dripple {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  border-radius: 50%;
+  -webkit-animation: ripple 0.7s linear infinite;
+  animation: ripple 0.7s linear infinite;
+}
+
+@keyframes ripple {
+  0% {
+    box-shadow: 0 0 0 0 rgba(202, 217, 255, 0.19),
+      0 0 0 0.3em rgba(202, 217, 255, 0.19), 
+      0 0 0 0.75em rgba(202, 217, 255, 0.19);
+  }
+  100% {
+    box-shadow: 0 0 0 0.3em rgba(202, 217, 255, 0.19),
+      0 0 0 0.75em rgba(202, 217, 255, 0.19), 
+      0 0 0 2em rgba(75, 146, 228, 0);
+  }
+}
+
+@keyframes keyli1 {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: 8px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+@keyframes keyli2 {
+  0% {
+    top: 0px;
+  }
+  25% {
+    top: 3px;
+  }
+  50% {
+    top: 5px;
+  }
+  70% {
+    top: 3px;
+  }
+  100% {
+    top: 0px;
+  }
+}
