@@ -13,8 +13,11 @@ html, body{
     width: 100%; */
     background-color:#111;
     color:white;
+    /* overflow-x: hidden; */
 }
-
+body {
+    overflow-x: hidden;
+}
 .firstSection {
     height: 100vh;
     width: 100%;
@@ -27,6 +30,10 @@ html, body{
 
 .secondTextOpacity {
     opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .firstSection div {
@@ -75,6 +82,10 @@ html, body{
     background-color: aquamarine;
 }
 
+.secndAnime {
+    background-color: aliceblue;
+}
+
 .thirdContainer {
     height: 100vh;
     width: 100%;
@@ -87,15 +98,62 @@ html, body{
 }
 
 .thireDiver {
-    position: sticky;
-    top: 0;
+    /* position: sticky;
+    top: 0; */
     /* height: 100vh; */
     /* width: 100%; */
     /* background-color: #ff8e7f; */
+}
+
+.sideUl {
+    display: flex;
+    list-style: circle;
+    padding-left: 100px;
+    padding-right: 100px;
+    transform: translate(25%, 0%);
+}
+
+.sideUl li{
+    font-size: 52px;
+    font-weight: bold;
+    color: #555555;
+    /* word-wrap: inherit; */
+    white-space: nowrap;
+    margin-right: 80px;
 }
 
 .thirdContainer h1 {
     font-size: 72px;
     font-weight: bold;
     color:white;
+}
+
+
+.imgContainers {
+    position: relative;
+}
+
+.secondImg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.secondImg img {
+    opacity: 0;
+}
+
+.secondImg .sub1 {
+    position: absolute;
+    top: 20%;
+    left: 60%;
+    /* transform: translate(-50%, -50%); */
+}
+
+.secondImg .sub2 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    /* transform: translate(0%, -50%); */
 }
