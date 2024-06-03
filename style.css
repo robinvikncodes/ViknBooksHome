@@ -132,7 +132,7 @@ button, input[type="submit"], input[type="reset"] {
 
 .secndAnime {
     background-color: aliceblue;
-    max-height: 786px;
+    /* max-height: 786px; */
 }
 
 .thirdContainer {
